@@ -8,7 +8,7 @@
 
 > 1、新建一条分支：test-serve
 
-> 2、先切到 v1 分支，rebase test-serve 分支
+> 2、先切到 test-serve 分支，rebase v1 分支
 
 > 3、再切到 v2 分支，rebase test-serve 分支
 
