@@ -18,6 +18,8 @@
 
 >  如果两条进行rebase 操作的分支中，经过对比存在相同的commit ID，会进行fast-forward快进操作，不会产生一个新的提交，而不同的commit ID 会更新到另外rebase分支上去
 
+## Git rebase 分支记录行为
+
 ![](https://test-file.kfangcdn.com/test/0b74b6f8f9f643b3a56323a5567be672.png)
 
 > 如上图有两个分支，一条master分支,一条iss53 分支，很明显我们看到两条分支有共同的提交记录C0、C1、C2,3条记录，所以在rebase 过程中这3条记录会进行fast-forward快进操作，但是我们发现iss53分支比master 分支落后一条记录C4,如果我们想把iss53分支合并到master分支上，怎么操作呢？
@@ -28,12 +30,12 @@
 
 
 
-## Git rebase 操作命令
+## Git rebase 操作部分命令
 > git rebase --continue，rebase操作中解决完冲突，git add . => git rebase --continue
 
 > git rebase --abort ，取消当前的rebase操作
 
-## demo rebase 分支步骤
+##  rebase 合并多条分支步骤
 
 > 一条 v1 分支，一条 v2 分支
 
